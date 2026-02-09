@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Créatif - À propos</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="CRÉATIF" data-en="CREATIVE">CRÉATIF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="about.html" class="nav-link active" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+            <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+            <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title" data-fr="À propos de nous" data-en="About Us">À propos de nous</h1>
+                <div class="page-subtitle" data-fr="Notre histoire, notre mission, notre passion" data-en="Our story, our mission, our passion">
+                    Notre histoire, notre mission, notre passion
+                </div>
+            </div>
+
+            <article class="text-content">
+                <section class="content-section">
+                    <h2 data-fr="Notre Vision" data-en="Our Vision">Notre Vision</h2>
+                    <p data-fr="Nous sommes une équipe de créatifs passionnés qui croient au pouvoir du design pour transformer les idées en expériences mémorables. Depuis notre création, nous avons travaillé sans relâche pour repousser les limites de la créativité digitale." 
+                       data-en="We are a team of passionate creatives who believe in the power of design to transform ideas into memorable experiences. Since our inception, we have worked tirelessly to push the boundaries of digital creativity.">
+                        Nous sommes une équipe de créatifs passionnés qui croient au pouvoir du design pour transformer les idées en expériences mémorables. Depuis notre création, nous avons travaillé sans relâche pour repousser les limites de la créativité digitale.
+                    </p>
+                    <p data-fr="Chaque projet est une opportunité d'innover, d'explorer de nouvelles approches et de créer quelque chose d'unique. Nous ne suivons pas les tendances - nous les créons."
+                       data-en="Every project is an opportunity to innovate, explore new approaches, and create something unique. We don't follow trends - we create them.">
+                        Chaque projet est une opportunité d'innover, d'explorer de nouvelles approches et de créer quelque chose d'unique. Nous ne suivons pas les tendances - nous les créons.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2 data-fr="Notre Approche" data-en="Our Approach">Notre Approche</h2>
+                    <p data-fr="Notre processus créatif commence toujours par l'écoute. Nous prenons le temps de comprendre vos besoins, vos objectifs et votre vision. Cette compréhension profonde nous permet de concevoir des solutions qui ne sont pas seulement belles, mais aussi efficaces et pertinentes."
+                       data-en="Our creative process always starts with listening. We take the time to understand your needs, goals, and vision. This deep understanding allows us to design solutions that are not only beautiful, but also effective and relevant.">
+                        Notre processus créatif commence toujours par l'écoute. Nous prenons le temps de comprendre vos besoins, vos objectifs et votre vision. Cette compréhension profonde nous permet de concevoir des solutions qui ne sont pas seulement belles, mais aussi efficaces et pertinentes.
+                    </p>
+                    <p data-fr="Nous combinons l'art et la technologie, l'intuition et l'analyse, la tradition et l'innovation. Le résultat ? Des créations qui captivent, inspirent et performent."
+                       data-en="We combine art and technology, intuition and analysis, tradition and innovation. The result? Creations that captivate, inspire, and perform.">
+                        Nous combinons l'art et la technologie, l'intuition et l'analyse, la tradition et l'innovation. Le résultat ? Des créations qui captivent, inspirent et performent.
+                    </p>
+                </section>
+
+                <section class="content-section">
+                    <h2 data-fr="Nos Valeurs" data-en="Our Values">Nos Valeurs</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <h3 data-fr="Excellence" data-en="Excellence">Excellence</h3>
+                            <p data-fr="Nous visons la perfection dans chaque détail de notre travail."
+                               data-en="We strive for perfection in every detail of our work.">
+                                Nous visons la perfection dans chaque détail de notre travail.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <h3 data-fr="Innovation" data-en="Innovation">Innovation</h3>
+                            <p data-fr="Nous explorons constamment de nouvelles façons de créer et de concevoir."
+                               data-en="We constantly explore new ways to create and design.">
+                                Nous explorons constamment de nouvelles façons de créer et de concevoir.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <h3 data-fr="Authenticité" data-en="Authenticity">Authenticité</h3>
+                            <p data-fr="Chaque création reflète notre vision unique et celle de nos clients."
+                               data-en="Each creation reflects our unique vision and that of our clients.">
+                                Chaque création reflète notre vision unique et celle de nos clients.
+                            </p>
+                        </div>
+                        <div class="value-card">
+                            <h3 data-fr="Collaboration" data-en="Collaboration">Collaboration</h3>
+                            <p data-fr="Nous travaillons main dans la main avec nos clients pour co-créer."
+                               data-en="We work hand in hand with our clients to co-create.">
+                                Nous travaillons main dans la main avec nos clients pour co-créer.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="content-section">
+                    <h2 data-fr="Rejoignez-nous" data-en="Join Us">Rejoignez-nous</h2>
+                    <p data-fr="Que vous ayez un projet en tête ou simplement envie de discuter de créativité, nous sommes là pour vous écouter. Ensemble, créons quelque chose d'extraordinaire."
+                       data-en="Whether you have a project in mind or just want to discuss creativity, we're here to listen. Together, let's create something extraordinary.">
+                        Que vous ayez un projet en tête ou simplement envie de discuter de créativité, nous sommes là pour vous écouter. Ensemble, créons quelque chose d'extraordinaire.
+                    </p>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2024 Blog Créatif. Tous droits réservés." data-en="© 2024 Creative Blog. All rights reserved.">
+                © 2024 Blog Créatif. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
