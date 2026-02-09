@@ -8,22 +8,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="language-switcher">
-        <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
-        <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
-    </div>
 
     <nav class="main-nav">
         <div class="nav-brand">
             <h1 class="logo" data-fr="CRÉATIF" data-en="CREATIVE">CRÉATIF</h1>
         </div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
-            <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
-            <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
-            <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
-            <li><a href="contact.html" class="nav-link active" data-fr="Contact" data-en="Contact">Contact</a></li>
-        </ul>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+                <li><a href="contact.html" class="nav-link active" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+            <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        </div>
         <div class="nav-toggle">
             <span></span>
             <span></span>
