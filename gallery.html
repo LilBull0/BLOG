@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Créatif - Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="CRÉATIF" data-en="CREATIVE">CRÉATIF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="gallery.html" class="nav-link active" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+            <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+            <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title" data-fr="Galerie Visuelle" data-en="Visual Gallery">Galerie Visuelle</h1>
+                <div class="page-subtitle" data-fr="Découvrez nos créations en images et en vidéos" data-en="Discover our creations in images and videos">
+                    Découvrez nos créations en images et en vidéos
+                </div>
+            </div>
+
+            <!-- Image Carousel Section -->
+            <section class="carousel-section">
+                <h2 data-fr="Carrousel d'Images" data-en="Image Carousel">Carrousel d'Images</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                                    <span>Image 1</span>
+                                </div>
+                                <p class="slide-caption" data-fr="Design minimaliste et élégant" data-en="Minimalist and elegant design">Design minimaliste et élégant</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                                    <span>Image 2</span>
+                                </div>
+                                <p class="slide-caption" data-fr="Couleurs vibrantes et audacieuses" data-en="Vibrant and bold colors">Couleurs vibrantes et audacieuses</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                                    <span>Image 3</span>
+                                </div>
+                                <p class="slide-caption" data-fr="Fraîcheur et modernité" data-en="Freshness and modernity">Fraîcheur et modernité</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                                    <span>Image 4</span>
+                                </div>
+                                <p class="slide-caption" data-fr="Nature et harmonie" data-en="Nature and harmony">Nature et harmonie</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                                    <span>Image 5</span>
+                                </div>
+                                <p class="slide-caption" data-fr="Énergie et créativité" data-en="Energy and creativity">Énergie et créativité</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h2 data-fr="Vidéo de Présentation" data-en="Presentation Video">Vidéo de Présentation</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                            title="Vidéo de présentation" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption" data-fr="Découvrez notre processus créatif en vidéo" data-en="Discover our creative process in video">
+                        Découvrez notre processus créatif en vidéo
+                    </p>
+                </div>
+            </section>
+
+            <!-- Parallax Image Grid -->
+            <section class="image-grid-section">
+                <h2 data-fr="Collection de Créations" data-en="Collection of Creations">Collection de Créations</h2>
+                <div class="image-grid">
+                    <div class="grid-item large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <span data-fr="Projet 1" data-en="Project 1">Projet 1</span>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <span data-fr="Projet 2" data-en="Project 2">Projet 2</span>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                            <span data-fr="Projet 3" data-en="Project 3">Projet 3</span>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                            <span data-fr="Projet 4" data-en="Project 4">Projet 4</span>
+                        </div>
+                    </div>
+                    <div class="grid-item large">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                            <span data-fr="Projet 5" data-en="Project 5">Projet 5</span>
+                        </div>
+                    </div>
+                    <div class="grid-item">
+                        <div class="placeholder-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                            <span data-fr="Projet 6" data-en="Project 6">Projet 6</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2024 Blog Créatif. Tous droits réservés." data-en="© 2024 Creative Blog. All rights reserved.">
+                © 2024 Blog Créatif. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

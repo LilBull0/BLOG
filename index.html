@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Créatif - Accueil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="CRÉATIF" data-en="CREATIVE">CRÉATIF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link active" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+            <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+            <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h2 class="hero-title" data-fr="Bienvenue dans notre univers créatif" data-en="Welcome to our creative universe">
+                Bienvenue dans notre univers créatif
+            </h2>
+            <p class="hero-subtitle" data-fr="Explorez un monde d'inspiration, d'innovation et de beauté" data-en="Explore a world of inspiration, innovation and beauty">
+                Explorez un monde d'inspiration, d'innovation et de beauté
+            </p>
+            <a href="gallery.html" class="cta-button" data-fr="Découvrir" data-en="Discover">Découvrir</a>
+        </div>
+        <div class="hero-visual">
+            <div class="floating-card card-1"></div>
+            <div class="floating-card card-2"></div>
+            <div class="floating-card card-3"></div>
+        </div>
+    </header>
+
+    <section class="features">
+        <div class="container">
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <div class="feature-icon">🎨</div>
+                    <h3 data-fr="Design Unique" data-en="Unique Design">Design Unique</h3>
+                    <p data-fr="Chaque projet est une œuvre d'art conçue sur mesure pour vous" data-en="Every project is a custom-made work of art designed for you">
+                        Chaque projet est une œuvre d'art conçue sur mesure pour vous
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">⚡</div>
+                    <h3 data-fr="Performance" data-en="Performance">Performance</h3>
+                    <p data-fr="Des solutions rapides et optimisées pour tous les appareils" data-en="Fast and optimized solutions for all devices">
+                        Des solutions rapides et optimisées pour tous les appareils
+                    </p>
+                </div>
+                <div class="feature-item">
+                    <div class="feature-icon">✨</div>
+                    <h3 data-fr="Innovation" data-en="Innovation">Innovation</h3>
+                    <p data-fr="Nous repoussons les limites de la créativité digitale" data-en="We push the boundaries of digital creativity">
+                        Nous repoussons les limites de la créativité digitale
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="parallax-section">
+        <div class="parallax-content">
+            <h2 data-fr="Créons ensemble quelque chose d'extraordinaire" data-en="Let's create something extraordinary together">
+                Créons ensemble quelque chose d'extraordinaire
+            </h2>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2024 Blog Créatif. Tous droits réservés." data-en="© 2024 Creative Blog. All rights reserved.">
+                © 2024 Blog Créatif. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

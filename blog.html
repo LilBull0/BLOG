@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Créatif - Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+        <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+    </div>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="CRÉATIF" data-en="CREATIVE">CRÉATIF</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+            <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+            <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+            <li><a href="blog.html" class="nav-link active" data-fr="Blog" data-en="Blog">Blog</a></li>
+            <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+        </ul>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title" data-fr="Articles & Inspirations" data-en="Articles & Inspirations">Articles & Inspirations</h1>
+                <div class="page-subtitle" data-fr="Découvrez nos dernières réflexions créatives" data-en="Discover our latest creative thoughts">
+                    Découvrez nos dernières réflexions créatives
+                </div>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <span class="blog-date">15 Jan 2024</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="L'art de la typographie moderne" data-en="The art of modern typography">L'art de la typographie moderne</h3>
+                        <p data-fr="Explorez comment la typographie peut transformer complètement l'identité d'un projet et créer une connexion émotionnelle avec votre audience."
+                           data-en="Explore how typography can completely transform a project's identity and create an emotional connection with your audience.">
+                            Explorez comment la typographie peut transformer complètement l'identité d'un projet et créer une connexion émotionnelle avec votre audience.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <span class="blog-date">12 Jan 2024</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="Couleurs et psychologie" data-en="Colors and psychology">Couleurs et psychologie</h3>
+                        <p data-fr="Découvrez l'impact psychologique des couleurs dans le design et comment les utiliser pour influencer les émotions et comportements."
+                           data-en="Discover the psychological impact of colors in design and how to use them to influence emotions and behaviors.">
+                            Découvrez l'impact psychologique des couleurs dans le design et comment les utiliser pour influencer les émotions et comportements.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <span class="blog-date">8 Jan 2024</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="Design responsive : les meilleures pratiques" data-en="Responsive design: best practices">Design responsive : les meilleures pratiques</h3>
+                        <p data-fr="Apprenez les techniques essentielles pour créer des expériences web qui s'adaptent parfaitement à tous les appareils et tailles d'écran."
+                           data-en="Learn essential techniques to create web experiences that perfectly adapt to all devices and screen sizes.">
+                            Apprenez les techniques essentielles pour créer des expériences web qui s'adaptent parfaitement à tous les appareils et tailles d'écran.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <span class="blog-date">5 Jan 2024</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="Animations web qui captivent" data-en="Web animations that captivate">Animations web qui captivent</h3>
+                        <p data-fr="Plongez dans le monde des animations web et découvrez comment créer des micro-interactions qui enchantent vos utilisateurs."
+                           data-en="Dive into the world of web animations and discover how to create micro-interactions that delight your users.">
+                            Plongez dans le monde des animations web et découvrez comment créer des micro-interactions qui enchantent vos utilisateurs.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <span class="blog-date">2 Jan 2024</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="Minimalisme vs Maximalisme" data-en="Minimalism vs Maximalism">Minimalisme vs Maximalisme</h3>
+                        <p data-fr="Analysons les deux philosophies de design opposées et comment choisir l'approche qui convient le mieux à votre projet."
+                           data-en="Let's analyze two opposing design philosophies and how to choose the approach that best suits your project.">
+                            Analysons les deux philosophies de design opposées et comment choisir l'approche qui convient le mieux à votre projet.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-card-image" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <span class="blog-date">28 Déc 2023</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <h3 data-fr="L'importance de l'accessibilité" data-en="The importance of accessibility">L'importance de l'accessibilité</h3>
+                        <p data-fr="Explorez pourquoi l'accessibilité web n'est pas une option mais une nécessité, et comment la mettre en œuvre efficacement."
+                           data-en="Explore why web accessibility is not an option but a necessity, and how to implement it effectively.">
+                            Explorez pourquoi l'accessibilité web n'est pas une option mais une nécessité, et comment la mettre en œuvre efficacement.
+                        </p>
+                        <a href="#" class="read-more" data-fr="Lire la suite →" data-en="Read more →">Lire la suite →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2024 Blog Créatif. Tous droits réservés." data-en="© 2024 Creative Blog. All rights reserved.">
+                © 2024 Blog Créatif. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
