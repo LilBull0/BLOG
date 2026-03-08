@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALO Saga - Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="HALO" data-en="HALO">HALO</h1>
+        </div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="gallery.html" class="nav-link active" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+            <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title" data-fr="Univers Visuel HALO" data-en="HALO Visual Universe">Univers Visuel HALO</h1>
+                <div class="page-subtitle" data-fr="Images et vidéos de la saga légendaire" data-en="Images and videos from the legendary saga">
+                    Images et vidéos de la saga légendaire
+                </div>
+            </div>
+
+            <!-- Image Carousel Section -->
+            <section class="carousel-section">
+                <h2 data-fr="Carrousel d'Images" data-en="Image Carousel">Carrousel d'Images</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1538481143235-c648f91b6434?w=800&h=450&fit=crop" alt="Master Chief" class="carousel-image">
+                                <p class="slide-caption" data-fr="Master Chief - Le Super-Soldat" data-en="Master Chief - The Super-Soldier">Master Chief - Le Super-Soldat</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1552567933-e89d7eaf00ae?w=800&h=450&fit=crop" alt="Cortana" class="carousel-image">
+                                <p class="slide-caption" data-fr="Cortana - L'IA Légendaire" data-en="Cortana - The Legendary AI">Cortana - L'IA Légendaire</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1511379938547-c1f69b13d835?w=800&h=450&fit=crop" alt="Halo Ring" class="carousel-image">
+                                <p class="slide-caption" data-fr="L'Anneau HALO - Une Arme Extraordinaire" data-en="The HALO Ring - An Extraordinary Weapon">L'Anneau HALO - Une Arme Extraordinaire</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1535016120754-fd45c1d54fce?w=800&h=450&fit=crop" alt="Spartan Armor" class="carousel-image">
+                                <p class="slide-caption" data-fr="Armure Spartan - Technologie Avancée" data-en="Spartan Armor - Advanced Technology">Armure Spartan - Technologie Avancée</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800&h=450&fit=crop" alt="Covenant Battle" class="carousel-image">
+                                <p class="slide-caption" data-fr="La Bataille contre le Covenant" data-en="The Battle Against the Covenant">La Bataille contre le Covenant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h2 data-fr="Vidéo de Présentation" data-en="Presentation Video">Vidéo de Présentation</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="https://www.youtube.com/embed/PQ-T7MRgzIc" 
+                            title="HALO Combat Evolved Trailer" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption" data-fr="Découvrez l'univers épique de HALO" data-en="Discover the epic HALO universe">
+                        Découvrez l'univers épique de HALO
+                    </p>
+                </div>
+            </section>
+
+            <!-- Parallax Image Grid -->
+            <section class="image-grid-section">
+                <h2 data-fr="Collection de Créations" data-en="Collection of Creations">Collection de Créations</h2>
+                <div class="image-grid">
+                    <div class="grid-item large">
+                        <img src="https://images.unsplash.com/photo-1551958219-acbc608c6c4d?w=600&h=400&fit=crop" alt="Master Chief Combat" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Master Chief en Action" data-en="Master Chief in Action">Master Chief en Action</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300&fit=crop" alt="Halo Weapons" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Arsenal HALO" data-en="HALO Arsenal">Arsenal HALO</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1538481143235-c648f91b6434?w=400&h=300&fit=crop" alt="Spartan Assaul" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Assaut des Spartans" data-en="Spartan Assault">Assaut des Spartans</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1611339555312-e607c04352fd?w=400&h=300&fit=crop" alt="Future Combat" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Combat du Futur" data-en="Future Combat">Combat du Futur</span>
+                    </div>
+                    <div class="grid-item large">
+                        <img src="https://images.unsplash.com/photo-1535016120754-fd45c1d54fce?w=600&h=400&fit=crop" alt="Halo Epic" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="L'Univers HALO" data-en="The HALO Universe">L'Univers HALO</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Epic Battle" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Bataille Épique" data-en="Epic Battle">Bataille Épique</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2026 HALO Saga. Tous droits réservés." data-en="© 2026 HALO Saga. All rights reserved.">
+                © 2026 HALO Saga. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+=======
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALO Saga - Galerie</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo" data-fr="HALO" data-en="HALO">HALO</h1>
+        </div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
+                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
+                <li><a href="gallery.html" class="nav-link active" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
+                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="language-switcher">
+            <button onclick="changeLanguage('fr')" class="lang-btn active" data-lang="fr">FR</button>
+            <button onclick="changeLanguage('en')" class="lang-btn" data-lang="en">EN</button>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title" data-fr="Univers Visuel HALO" data-en="HALO Visual Universe">Univers Visuel HALO</h1>
+                <div class="page-subtitle" data-fr="Images et vidéos de la saga légendaire" data-en="Images and videos from the legendary saga">
+                    Images et vidéos de la saga légendaire
+                </div>
+            </div>
+
+            <!-- Image Carousel Section -->
+            <section class="carousel-section">
+                <h2 data-fr="Carrousel d'Images" data-en="Image Carousel">Carrousel d'Images</h2>
+                <div class="carousel-container">
+                    <button class="carousel-btn prev" onclick="moveCarousel(-1)">❮</button>
+                    <div class="carousel-wrapper">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="master.jpg" alt="Master Chief" class="carousel-image">
+                                <p class="slide-caption" data-fr="Master Chief - Le Super-Soldat" data-en="Master Chief - The Super-Soldier">Master Chief - Le Super-Soldat</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="cortana.webp" alt="Cortana" class="carousel-image">
+                                <p class="slide-caption" data-fr="Cortana - L'IA Légendaire" data-en="Cortana - The Legendary AI">Cortana - L'IA Légendaire</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="anneau.jpg" alt="Halo Ring" class="carousel-image">
+                                <p class="slide-caption" data-fr="L'Anneau HALO - Une Arme Extraordinaire" data-en="The HALO Ring - An Extraordinary Weapon">L'Anneau HALO - Une Arme Extraordinaire</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="armure.png" alt="Spartan Armor" class="carousel-image">
+                                <p class="slide-caption" data-fr="Armure Spartan - Technologie Avancée" data-en="Spartan Armor - Advanced Technology">Armure Spartan - Technologie Avancée</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="bataille.jpg" alt="Covenant Battle" class="carousel-image">
+                                <p class="slide-caption" data-fr="La Bataille contre le Covenant" data-en="The Battle Against the Covenant">La Bataille contre le Covenant</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-btn next" onclick="moveCarousel(1)">❯</button>
+                </div>
+                <div class="carousel-dots"></div>
+            </section>
+
+            <!-- Video Section -->
+            <section class="video-section">
+                <h2 data-fr="Vidéo de Présentation" data-en="Presentation Video">Vidéo de Présentation</h2>
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe 
+                            src="Halo-Trailer.mp4" 
+                            title="HALO Combat Evolved Trailer" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="video-caption" data-fr="Découvrez l'univers épique de HALO" data-en="Discover the epic HALO universe">
+                        Découvrez l'univers épique de HALO
+                    </p>
+                </div>
+            </section>
+
+            <!-- Parallax Image Grid -->
+            <section class="image-grid-section">
+                <h2 data-fr="Collection de Créations" data-en="Collection of Creations">Collection de Créations</h2>
+                <div class="image-grid">
+                    <div class="grid-item large">
+                        <iframe src="master-chief-halo.mp4" alt="Master Chief Combat" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Master Chief en Action" data-en="Master Chief in Action">Master Chief en Action</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1556656793-08538906a9f8?w=400&h=300&fit=crop" alt="Halo Weapons" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Arsenal HALO" data-en="HALO Arsenal">Arsenal HALO</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1538481143235-c648f91b6434?w=400&h=300&fit=crop" alt="Spartan Assaul" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Assaut des Spartans" data-en="Spartan Assault">Assaut des Spartans</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1611339555312-e607c04352fd?w=400&h=300&fit=crop" alt="Future Combat" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Combat du Futur" data-en="Future Combat">Combat du Futur</span>
+                    </div>
+                    <div class="grid-item large">
+                        <img src="https://images.unsplash.com/photo-1535016120754-fd45c1d54fce?w=600&h=400&fit=crop" alt="Halo Epic" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="L'Univers HALO" data-en="The HALO Universe">L'Univers HALO</span>
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=300&fit=crop" alt="Epic Battle" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+                        <span data-fr="Bataille Épique" data-en="Epic Battle">Bataille Épique</span>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p data-fr="© 2026 HALO Saga. Tous droits réservés." data-en="© 2026 HALO Saga. All rights reserved.">
+                © 2026 HALO Saga. Tous droits réservés.
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+>>>>>>> 76696b149c242c71f03a60d0c1b439cfd079df81
