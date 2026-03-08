@@ -8,23 +8,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language Selection Inputs (CSS-only) -->
+    <input type="radio" id="lang-fr" name="language" class="lang-input" checked>
+    <input type="radio" id="lang-en" name="language" class="lang-input">
 
     <nav class="main-nav">
         <div class="nav-brand">
-            <h1 class="logo" data-fr="HALO" data-en="HALO">HALO</h1>
+            <h1 class="logo">
+                <span class="lang-fr">HALO</span>
+                <span class="lang-en">HALO</span>
+            </h1>
         </div>
         <div class="nav-center">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
-                <li><a href="about.html" class="nav-link active" data-fr="À propos" data-en="About">À propos</a></li>
-                <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
-                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
-                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li><a href="index.html" class="nav-link">
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-en">Home</span>
+                </a></li>
+                <li><a href="about.html" class="nav-link active">
+                    <span class="lang-fr">À propos</span>
+                    <span class="lang-en">About</span>
+                </a></li>
+                <li><a href="gallery.html" class="nav-link">
+                    <span class="lang-fr">Galerie</span>
+                    <span class="lang-en">Gallery</span>
+                </a></li>
+                <li><a href="blog.html" class="nav-link">
+                    <span class="lang-fr">Blog</span>
+                    <span class="lang-en">Blog</span>
+                </a></li>
             </ul>
         </div>
         <div class="language-switcher">
-            <button class="lang-btn active" data-lang="fr">FR</button>
-            <button class="lang-btn" data-lang="en">EN</button>
+            <label for="lang-fr" class="lang-btn active" data-lang="fr">FR</label>
+            <label for="lang-en" class="lang-btn active" data-lang="en">EN</label>
         </div>
         <div class="nav-toggle">
             <span></span>
@@ -36,9 +53,13 @@
     <main class="page-content">
         <div class="container">
             <div class="page-header">
-                <h1 class="page-title" data-fr="La Saga HALO" data-en="The HALO Saga">La Saga HALO</h1>
-                <div class="page-subtitle" data-fr="Une épopée galactique de sacrifice, de devoir et d'humanité" data-en="An epic galactic story of sacrifice, duty and humanity">
-                    Une épopée galactique de sacrifice, de devoir et d'humanité
+                <h1 class="page-title">
+                    <span class="lang-fr">La Saga HALO</span>
+                    <span class="lang-en">The HALO Saga</span>
+                </h1>
+                <div class="page-subtitle">
+                    <span class="lang-fr">Une épopée galactique de sacrifice, de devoir et d'humanité</span>
+                    <span class="lang-en">An epic galactic story of sacrifice, duty and humanity</span>
                 </div>
             </div>
 

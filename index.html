@@ -8,6 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language Selection Inputs (CSS-only) -->
+    <input type="radio" id="lang-fr" name="language" class="lang-input" checked>
+    <input type="radio" id="lang-en" name="language" class="lang-input">
 
     <nav class="main-nav">
         <div class="nav-brand">
@@ -15,16 +18,27 @@
         </div>
         <div class="nav-center">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link active" data-fr="Accueil" data-en="Home">Accueil</a></li>
-                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
-                <li><a href="gallery.html" class="nav-link" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
-                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
-                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li><a href="index.html" class="nav-link active">
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-en">Home</span>
+                </a></li>
+                <li><a href="about.html" class="nav-link">
+                    <span class="lang-fr">À propos</span>
+                    <span class="lang-en">About</span>
+                </a></li>
+                <li><a href="gallery.html" class="nav-link">
+                    <span class="lang-fr">Galerie</span>
+                    <span class="lang-en">Gallery</span>
+                </a></li>
+                <li><a href="blog.html" class="nav-link">
+                    <span class="lang-fr">Blog</span>
+                    <span class="lang-en">Blog</span>
+                </a></li>
             </ul>
         </div>
         <div class="language-switcher">
-            <button class="lang-btn active" data-lang="fr">FR</button>
-            <button class="lang-btn" data-lang="en">EN</button>
+            <label for="lang-fr" class="lang-btn active" data-lang="fr">FR</label>
+            <label for="lang-en" class="lang-btn active" data-lang="en">EN</label>
         </div>
         <div class="nav-toggle">
             <span></span>
@@ -35,13 +49,18 @@
 
     <header class="hero">
         <div class="hero-content">
-            <h2 class="hero-title" data-fr="Bienvenue dans la saga HALO" data-en="Welcome to the HALO saga">
-                Bienvenue dans la saga HALO
+            <h2 class="hero-title">
+                <span class="lang-fr">Bienvenue dans la saga HALO</span>
+                <span class="lang-en">Welcome to the HALO saga</span>
             </h2>
-            <p class="hero-subtitle" data-fr="Une épopée galactique de sacrifices, de héros et de guerres intra-galactiques" data-en="An epic galactic story of sacrifice, heroes and endless wars">
-                Une épopée galactique de sacrifices, de héros et de guerres intra-galactiques
+            <p class="hero-subtitle">
+                <span class="lang-fr">Une épopée galactique de sacrifices, de héros et de guerres intra-galactiques</span>
+                <span class="lang-en">An epic galactic story of sacrifice, heroes and endless wars</span>
             </p>
-            <a href="blog.html" class="cta-button" data-fr="Explorer" data-en="Explore">Explorer</a>
+            <a href="blog.html" class="cta-button">
+                <span class="lang-fr">Explorer</span>
+                <span class="lang-en">Explore</span>
+            </a>
         </div>
         <div class="hero-visual">
             <div class="floating-card card-1"></div>

@@ -1538,3 +1538,299 @@ img {
     font-size: 16px;
 }
 
+
+/* ===== CSS-ONLY LANGUAGE SWITCHER ===== */
+.lang-input {
+    display: none;
+}
+
+#lang-en:checked ~ *[data-fr] {
+    display: none;
+}
+
+#lang-en:checked ~ *[data-en] {
+    display: block;
+}
+
+
+
+/* ===== LANGUAGE SWITCHING (CSS-ONLY) ===== */
+.lang-input {
+    display: none;
+}
+
+.lang-en {
+    display: none;
+}
+
+#lang-en:checked ~ nav .lang-en,
+#lang-en:checked ~ main .lang-en,
+#lang-en:checked ~ * .lang-en {
+    display: inline;
+}
+
+#lang-en:checked ~ nav .lang-fr,
+#lang-en:checked ~ main .lang-fr,
+#lang-en:checked ~ * .lang-fr {
+    display: none;
+}
+
+/* ===== CAROUSEL (CSS-ONLY) ===== */
+.carousel-input {
+    display: none;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slide-1:checked ~ .carousel-wrapper .carousel-track {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .carousel-wrapper .carousel-track {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .carousel-wrapper .carousel-track {
+    transform: translateX(-200%);
+}
+
+#slide-4:checked ~ .carousel-wrapper .carousel-track {
+    transform: translateX(-300%);
+}
+
+#slide-5:checked ~ .carousel-wrapper .carousel-track {
+    transform: translateX(-400%);
+}
+
+/* Carousel dots highlighting */
+#slide-1:checked ~ .carousel-dots label[for=\"slide-1\"],
+#slide-2:checked ~ .carousel-dots label[for=\"slide-2\"],
+#slide-3:checked ~ .carousel-dots label[for=\"slide-3\"],
+#slide-4:checked ~ .carousel-dots label[for=\"slide-4\"],
+#slide-5:checked ~ .carousel-dots label[for=\"slide-5\"] {
+    background: var(--color-secondary);
+}
+
+.carousel-dot {
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+/* Language button styling */
+#lang-fr:checked ~ nav .language-switcher label[for=\"lang-fr\"],
+#lang-en:checked ~ nav .language-switcher label[for=\"lang-en\"] {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+#lang-fr:checked ~ nav .language-switcher label[for=\"lang-en\"],
+#lang-en:checked ~ nav .language-switcher label[for=\"lang-fr\"] {
+    opacity: 0.6;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+
+
+/* ===== LANGUAGE SWITCHING (CSS-ONLY) ===== */
+.lang-input {
+    display: none;
+}
+
+.lang-en {
+    display: none;
+}
+
+#lang-en:checked ~ nav .lang-en,
+#lang-en:checked ~ main .lang-en,
+#lang-en:checked ~ * .lang-en {
+    display: inline;
+}
+
+#lang-en:checked ~ nav .lang-fr,
+#lang-en:checked ~ main .lang-fr,
+#lang-en:checked ~ * .lang-fr {
+    display: none;
+}
+
+/* Language button styling */
+#lang-fr:checked ~ nav .language-switcher label[for=\"lang-fr\"],
+#lang-en:checked ~ nav .language-switcher label[for=\"lang-en\"] {
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+#lang-fr:checked ~ nav .language-switcher label[for=\"lang-en\"],
+#lang-en:checked ~ nav .language-switcher label[for=\"lang-fr\"] {
+    opacity: 0.6;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+/* ===== CAROUSEL (CSS-ONLY) ===== */
+.carousel-input {
+    display: none;
+}
+
+.carousel-wrapper {
+    position: relative;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #fff;
+    flex: 1;
+}
+
+.carousel-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    flex: 0 0 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slide-caption {
+    padding: 1rem;
+    text-align: center;
+    font-size: 18px;
+    background: #f5f5f5;
+}
+
+/* Transform based on active slide */
+#slide-1:checked ~ .carousel-container .carousel-inner .carousel-track {
+    transform: translateX(0%);
+}
+
+#slide-2:checked ~ .carousel-container .carousel-inner .carousel-track {
+    transform: translateX(-100%);
+}
+
+#slide-3:checked ~ .carousel-container .carousel-inner .carousel-track {
+    transform: translateX(-200%);
+}
+
+#slide-4:checked ~ .carousel-container .carousel-inner .carousel-track {
+    transform: translateX(-300%);
+}
+
+#slide-5:checked ~ .carousel-container .carousel-inner .carousel-track {
+    transform: translateX(-400%);
+}
+
+/* Carousel buttons - all hidden by default */
+.carousel-btn {
+    padding: 0.75rem 1.25rem;
+    font-size: 24px;
+    background: rgba(0, 255, 136, 0.15);
+    border: 2px solid var(--color-secondary);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: none;
+}
+
+.carousel-btn:hover {
+    background: rgba(0, 255, 136, 0.3);
+    transform: scale(1.1);
+}
+
+/* Show correct buttons for each slide */
+#slide-1:checked ~ .carousel-container .slide-1-prev,
+#slide-1:checked ~ .carousel-container .slide-1-next,
+#slide-2:checked ~ .carousel-container .slide-2-prev,
+#slide-2:checked ~ .carousel-container .slide-2-next,
+#slide-3:checked ~ .carousel-container .slide-3-prev,
+#slide-3:checked ~ .carousel-container .slide-3-next,
+#slide-4:checked ~ .carousel-container .slide-4-prev,
+#slide-4:checked ~ .carousel-container .slide-4-next,
+#slide-5:checked ~ .carousel-container .slide-5-prev,
+#slide-5:checked ~ .carousel-container .slide-5-next {
+    display: block;
+}
+
+/* Carousel dots */
+.carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-top: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.carousel-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 2px solid transparent;
+}
+
+.carousel-dot:hover {
+    transform: scale(1.2);
+    background: #999;
+}
+
+/* Highlight active dot */
+#slide-1:checked ~ .carousel-dots label[for=\"slide-1\"],
+#slide-2:checked ~ .carousel-dots label[for=\"slide-2\"],
+#slide-3:checked ~ .carousel-dots label[for=\"slide-3\"],
+#slide-4:checked ~ .carousel-dots label[for=\"slide-4\"],
+#slide-5:checked ~ .carousel-dots label[for=\"slide-5\"] {
+    background: var(--color-secondary);
+    transform: scale(1.4);
+    border-color: var(--color-secondary);
+}
+
+/* Responsive carousel */
+@media (max-width: 768px) {
+    .carousel-container {
+        gap: 0.5rem;
+    }
+    
+    .carousel-btn {
+        padding: 0.5rem 0.75rem;
+        font-size: 18px;
+    }
+    
+    .carousel-image {
+        height: 250px;
+    }
+    
+    .carousel-inner {
+        max-width: 100%;
+    }
+}

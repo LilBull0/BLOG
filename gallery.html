@@ -10,23 +10,40 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language Selection Inputs (CSS-only) -->
+    <input type="radio" id="lang-fr" name="language" class="lang-input" checked>
+    <input type="radio" id="lang-en" name="language" class="lang-input">
 
     <nav class="main-nav">
         <div class="nav-brand">
-            <h1 class="logo" data-fr="HALO" data-en="HALO">HALO</h1>
+            <h1 class="logo">
+                <span class="lang-fr">HALO</span>
+                <span class="lang-en">HALO</span>
+            </h1>
         </div>
         <div class="nav-center">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link" data-fr="Accueil" data-en="Home">Accueil</a></li>
-                <li><a href="about.html" class="nav-link" data-fr="À propos" data-en="About">À propos</a></li>
-                <li><a href="gallery.html" class="nav-link active" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
-                <li><a href="blog.html" class="nav-link" data-fr="Blog" data-en="Blog">Blog</a></li>
-                <li><a href="contact.html" class="nav-link" data-fr="Contact" data-en="Contact">Contact</a></li>
+                <li><a href="index.html" class="nav-link">
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-en">Home</span>
+                </a></li>
+                <li><a href="about.html" class="nav-link">
+                    <span class="lang-fr">À propos</span>
+                    <span class="lang-en">About</span>
+                </a></li>
+                <li><a href="gallery.html" class="nav-link active">
+                    <span class="lang-fr">Galerie</span>
+                    <span class="lang-en">Gallery</span>
+                </a></li>
+                <li><a href="blog.html" class="nav-link">
+                    <span class="lang-fr">Blog</span>
+                    <span class="lang-en">Blog</span>
+                </a></li>
             </ul>
         </div>
         <div class="language-switcher">
-            <button class="lang-btn active" data-lang="fr">FR</button>
-            <button class="lang-btn" data-lang="en">EN</button>
+            <label for="lang-fr" class="lang-btn active" data-lang="fr">FR</label>
+            <label for="lang-en" class="lang-btn active" data-lang="en">EN</label>
         </div>
         <div class="nav-toggle">
             <span></span>
@@ -38,44 +55,100 @@
     <main class="page-content">
         <div class="container">
             <div class="page-header">
-                <h1 class="page-title" data-fr="Univers Visuel HALO" data-en="HALO Visual Universe">Univers Visuel HALO</h1>
-                <div class="page-subtitle" data-fr="Images et vidéos de la saga légendaire" data-en="Images and videos from the legendary saga">
-                    Images et vidéos de la saga légendaire
+                <h1 class="page-title">
+                    <span class="lang-fr">Univers Visuel HALO</span>
+                    <span class="lang-en">HALO Visual Universe</span>
+                </h1>
+                <div class="page-subtitle">
+                    <span class="lang-fr">Images et vidéos de la saga légendaire</span>
+                    <span class="lang-en">Images and videos from the legendary saga</span>
                 </div>
             </div>
 
             <!-- Image Carousel Section -->
             <section class="carousel-section">
-                <h2 data-fr="Carrousel d'Images" data-en="Image Carousel">Carrousel d'Images</h2>
-                <div class="carousel-container">
-                    <button class="carousel-btn prev">❮</button>
-                    <div class="carousel-wrapper">
-                        <div class="carousel-track">
-                            <div class="carousel-slide">
-                                <img src="master.jpg" alt="Master Chief" class="carousel-image">
-                                <p class="slide-caption" data-fr="Master Chief - Le Super-Soldat" data-en="Master Chief - The Super-Soldier">Master Chief - Le Super-Soldat</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="cortana.webp" alt="Cortana" class="carousel-image">
-                                <p class="slide-caption" data-fr="Cortana - L'IA Légendaire" data-en="Cortana - The Legendary AI">Cortana - L'IA Légendaire</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="anneau.jpg" alt="Halo Ring" class="carousel-image">
-                                <p class="slide-caption" data-fr="L'Anneau HALO - Une Arme Extraordinaire" data-en="The HALO Ring - An Extraordinary Weapon">L'Anneau HALO - Une Arme Extraordinaire</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="armure.png" alt="Spartan Armor" class="carousel-image">
-                                <p class="slide-caption" data-fr="Armure Spartan - Technologie Avancée" data-en="Spartan Armor - Advanced Technology">Armure Spartan - Technologie Avancée</p>
-                            </div>
-                            <div class="carousel-slide">
-                                <img src="bataille.jpg" alt="Covenant Battle" class="carousel-image">
-                                <p class="slide-caption" data-fr="La Bataille contre le Covenant" data-en="The Battle Against the Covenant">La Bataille contre le Covenant</p>
+                <h2>
+                    <span class="lang-fr">Carrousel d'Images</span>
+                    <span class="lang-en">Image Carousel</span>
+                </h2>
+                <div class="carousel-wrapper">
+                    <input type="radio" id="slide-1" name="carousel-slide" class="carousel-input" checked>
+                    <input type="radio" id="slide-2" name="carousel-slide" class="carousel-input">
+                    <input type="radio" id="slide-3" name="carousel-slide" class="carousel-input">
+                    <input type="radio" id="slide-4" name="carousel-slide" class="carousel-input">
+                    <input type="radio" id="slide-5" name="carousel-slide" class="carousel-input">
+                    
+                    <div class="carousel-container">
+                        <!-- Navigation buttons that respond to current slide -->
+                        <!-- Slide 1 controls -->
+                        <label for="slide-5" class="carousel-btn prev slide-1-prev">❮</label>
+                        <label for="slide-2" class="carousel-btn next slide-1-next">❯</label>
+                        
+                        <!-- Slide 2 controls -->
+                        <label for="slide-1" class="carousel-btn prev slide-2-prev">❮</label>
+                        <label for="slide-3" class="carousel-btn next slide-2-next">❯</label>
+                        
+                        <!-- Slide 3 controls -->
+                        <label for="slide-2" class="carousel-btn prev slide-3-prev">❮</label>
+                        <label for="slide-4" class="carousel-btn next slide-3-next">❯</label>
+                        
+                        <!-- Slide 4 controls -->
+                        <label for="slide-3" class="carousel-btn prev slide-4-prev">❮</label>
+                        <label for="slide-5" class="carousel-btn next slide-4-next">❯</label>
+                        
+                        <!-- Slide 5 controls -->
+                        <label for="slide-4" class="carousel-btn prev slide-5-prev">❮</label>
+                        <label for="slide-1" class="carousel-btn next slide-5-next">❯</label>
+                        
+                        <div class="carousel-inner">
+                            <div class="carousel-track">
+                                <div class="carousel-slide">
+                                    <img src="master.jpg" alt="Master Chief" class="carousel-image">
+                                    <p class="slide-caption">
+                                        <span class="lang-fr">Master Chief - Le Super-Soldat</span>
+                                        <span class="lang-en">Master Chief - The Super-Soldier</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="cortana.webp" alt="Cortana" class="carousel-image">
+                                    <p class="slide-caption">
+                                        <span class="lang-fr">Cortana - L'IA Légendaire</span>
+                                        <span class="lang-en">Cortana - The Legendary AI</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="anneau.jpg" alt="Halo Ring" class="carousel-image">
+                                    <p class="slide-caption">
+                                        <span class="lang-fr">L'Anneau HALO - Une Arme Extraordinaire</span>
+                                        <span class="lang-en">The HALO Ring - An Extraordinary Weapon</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="armure.png" alt="Spartan Armor" class="carousel-image">
+                                    <p class="slide-caption">
+                                        <span class="lang-fr">Armure Spartan - Technologie Avancée</span>
+                                        <span class="lang-en">Spartan Armor - Advanced Technology</span>
+                                    </p>
+                                </div>
+                                <div class="carousel-slide">
+                                    <img src="bataille.jpg" alt="Covenant Battle" class="carousel-image">
+                                    <p class="slide-caption">
+                                        <span class="lang-fr">La Bataille contre le Covenant</span>
+                                        <span class="lang-en">The Battle Against the Covenant</span>
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <button class="carousel-btn next">❯</button>
+                    
+                    <div class="carousel-dots">
+                        <label for="slide-1" class="carousel-dot"></label>
+                        <label for="slide-2" class="carousel-dot"></label>
+                        <label for="slide-3" class="carousel-dot"></label>
+                        <label for="slide-4" class="carousel-dot"></label>
+                        <label for="slide-5" class="carousel-dot"></label>
+                    </div>
                 </div>
-                <div class="carousel-dots"></div>
             </section>
 
             <!-- Video Section -->
