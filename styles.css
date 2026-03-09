@@ -1689,24 +1689,6 @@ img {
     display: none;
 }
 
-/* Show nav-center when checkbox is checked */
-#nav-toggle-menu:checked ~ .main-nav .nav-center {
-    display: flex !important;
-}
-
-/* Animate hamburger menu lines */
-#nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(1) {
-    transform: rotate(45deg) translate(10px, 10px);
-}
-
-#nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(2) {
-    opacity: 0;
-}
-
-#nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
-}
-
 /* ===== LANGUAGE SWITCHING (CSS-ONLY) ===== */
 .lang-input {
     display: none;
@@ -1742,6 +1724,8 @@ img {
         padding: 16px 4%;
         gap: 16px;
         flex-wrap: wrap;
+        position: relative;
+        flex-direction: row;
     }
 
     .logo {
@@ -1750,18 +1734,16 @@ img {
     }
 
     .nav-center {
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: linear-gradient(135deg, rgba(10, 20, 40, 0.98) 0%, rgba(0, 77, 142, 0.95) 100%);
-        flex-direction: column;
-        width: 100%;
-        padding: 20px 4%;
-        gap: 16px;
-        box-shadow: 0 4px 30px rgba(0, 255, 136, 0.15);
-        z-index: 998;
+        display: none !important;
+        order: 5;
+        flex-basis: 100%;
+        padding: 20px 0;
+        border-top: 1px solid rgba(0, 255, 136, 0.2);
+        margin-top: 10px;
+    }
+
+    .nav-center.show {
+        display: flex !important;
     }
 
     .nav-links {
@@ -1788,12 +1770,13 @@ img {
 
     .nav-toggle span {
         background: white;
+        transition: var(--transition);
     }
 
     .language-switcher {
         margin-left: 0;
         margin-right: 0;
-        order: 4;
+        order: 2;
         background: rgba(0, 77, 142, 0.4);
         padding: 6px;
         gap: 4px;
@@ -1802,6 +1785,38 @@ img {
     .lang-btn {
         padding: 6px 12px;
         font-size: 12px;
+    }
+
+    /* Ensure nav-brand stays visible and first */
+    .nav-brand {
+        order: 1;
+        flex: 0 0 auto;
+    }
+
+    /* Close the menu by default on mobile (no absolute positioning) */
+    #nav-toggle-menu ~ .main-nav .nav-center {
+        display: none !important;
+    }
+
+    /* Open menu when checkbox is checked */
+    #nav-toggle-menu:checked ~ .main-nav .nav-center {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    /* Animate hamburger menu lines */
+    #nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(1) {
+        transform: rotate(45deg) translate(10px, 10px) !important;
+        background: white;
+    }
+
+    #nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #nav-toggle-menu:checked ~ .main-nav .nav-toggle span:nth-child(3) {
+        transform: rotate(-45deg) translate(7px, -7px) !important;
+        background: white;
     }
 
     /* Hero Section */
@@ -2190,6 +2205,42 @@ img {
 
     .page-title {
         font-size: clamp(32px, 5vw, 52px);
+    }
+}
+
+/* ===== DESKTOP STYLES (> 1024px) ===== */
+@media (min-width: 769px) {
+    /* Show nav-center on desktop */
+    .nav-center {
+        display: flex !important;
+        order: auto;
+        flex-basis: auto;
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .language-switcher {
+        order: auto;
+        margin-left: auto;
+        margin-right: 0;
+        background: rgba(0, 77, 142, 0.6);
+        padding: 8px;
+        gap: 8px;
+    }
+
+    .lang-btn {
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+
+    .nav-brand {
+        order: auto;
+        flex: auto;
     }
 }
 
