@@ -345,7 +345,7 @@ html {
         font-size: 12px !important;
     }
 
-    .main-nav .nav-link {
+    .main-nav .nav-link.link-fr {
         display: block !important;
         visibility: visible !important;
         opacity: 1 !important;
@@ -357,6 +357,29 @@ html {
         border-radius: 0;
         background: transparent;
         white-space: normal;
+    }
+
+    .main-nav .nav-link.link-en {
+        display: none !important;
+        width: 100%;
+        padding: 10px 0 !important;
+        font-size: 15px !important;
+        color: #ffffff !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+        border-radius: 0;
+        background: transparent;
+        white-space: normal;
+    }
+
+    /* When EN is active on mobile */
+    #en:target ~ .main-nav .nav-link.link-en {
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+    }
+
+    #en:target ~ .main-nav .nav-link.link-fr {
+        display: none !important;
     }
 
     .main-nav .nav-link::after {
