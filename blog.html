@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="nav-fix.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <!-- Language Selection Inputs (CSS-only) -->
-    <input type="radio" id="lang-fr" name="language" class="lang-input" checked>
-    <input type="radio" id="lang-en" name="language" class="lang-input">
-    
+<body id="top">
+    <span id="en" class="lang-anchor"></span>
+    <span id="fr" class="lang-anchor"></span>
+
     <!-- Mobile Menu Toggle (CSS-only) -->
     <input type="checkbox" id="nav-toggle-menu" class="nav-toggle-checkbox">
 
@@ -25,31 +24,31 @@
         </div>
         <div class="nav-center">
             <ul class="nav-links">
-                <li><a href="index.html" class="nav-link">
-                    <span class="lang-fr">Accueil</span>
-                    <span class="lang-en">Home</span>
-                </a></li>
-                <li><a href="about.html" class="nav-link">
-                    <span class="lang-fr">À propos</span>
-                    <span class="lang-en">About</span>
-                </a></li>
-                <li><a href="gallery.html" class="nav-link">
-                    <span class="lang-fr">Galerie</span>
-                    <span class="lang-en">Gallery</span>
-                </a></li>
-                <li><a href="blog.html" class="nav-link active">
-                    <span class="lang-fr">Blog</span>
-                    <span class="lang-en">Blog</span>
-                </a></li>
-                <li><a href="contact.html" class="nav-link">
-                    <span class="lang-fr">Contact</span>
-                    <span class="lang-en">Contact</span>
-                </a></li>
+                <li>
+                    <a href="index.html" class="nav-link link-fr">Accueil</a>
+                    <a href="index.html#en" class="nav-link link-en">Home</a>
+                </li>
+                <li>
+                    <a href="about.html" class="nav-link link-fr">À propos</a>
+                    <a href="about.html#en" class="nav-link link-en">About</a>
+                </li>
+                <li>
+                    <a href="gallery.html" class="nav-link link-fr">Galerie</a>
+                    <a href="gallery.html#en" class="nav-link link-en">Gallery</a>
+                </li>
+                <li>
+                    <a href="blog.html" class="nav-link link-fr active">Blog</a>
+                    <a href="blog.html#en" class="nav-link link-en active">Blog</a>
+                </li>
+                <li>
+                    <a href="contact.html" class="nav-link link-fr">Contact</a>
+                    <a href="contact.html#en" class="nav-link link-en">Contact</a>
+                </li>
             </ul>
         </div>
         <div class="language-switcher">
-            <label for="lang-fr" class="lang-btn active" data-lang="fr">FR</label>
-            <label for="lang-en" class="lang-btn active" data-lang="en">EN</label>
+            <a href="#fr" class="lang-btn">FR</a>
+            <a href="#en" class="lang-btn">EN</a>
         </div>
         <label for="nav-toggle-menu" class="nav-toggle">
             <span></span>
@@ -238,11 +237,16 @@
     <footer class="main-footer">
         <div class="footer-content">
             <p>
-                <span class="lang-fr">© 2024 Blog Créatif. Tous droits réservés.</span>
-                <span class="lang-en">© 2024 Creative Blog. All rights reserved.</span>
+                <span class="lang-fr">&copy; 2026 HALO Saga - Tous droits réservés</span>
+                <span class="lang-en">&copy; 2026 HALO Saga - All rights reserved</span>
+            </p>
+            <p>
+                <span class="lang-fr">Une passion pour l'univers HALO</span>
+                <span class="lang-en">A passion for the HALO Universe</span>
             </p>
         </div>
     </footer>
-
+    <a href="#fr" class="back-to-top link-fr" aria-label="Retour en haut">&#8679;</a>
+    <a href="#en" class="back-to-top link-en" aria-label="Back to top">&#8679;</a>
 </body>
 </html>
