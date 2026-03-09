@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HALO Saga - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Language Selection Inputs (CSS-only) -->
+    <input type="radio" id="lang-fr" name="language" class="lang-input" checked>
+    <input type="radio" id="lang-en" name="language" class="lang-input">
+
+    <nav class="main-nav">
+        <div class="nav-brand">
+            <h1 class="logo">
+                <span class="lang-fr">HALO</span>
+                <span class="lang-en">HALO</span>
+            </h1>
+        </div>
+        <div class="nav-center">
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">
+                    <span class="lang-fr">Accueil</span>
+                    <span class="lang-en">Home</span>
+                </a></li>
+                <li><a href="about.html" class="nav-link">
+                    <span class="lang-fr">À propos</span>
+                    <span class="lang-en">About</span>
+                </a></li>
+                <li><a href="gallery.html" class="nav-link">
+                    <span class="lang-fr">Galerie</span>
+                    <span class="lang-en">Gallery</span>
+                </a></li>
+                <li><a href="blog.html" class="nav-link">
+                    <span class="lang-fr">Blog</span>
+                    <span class="lang-en">Blog</span>
+                </a></li>
+                <li><a href="contact.html" class="nav-link active">
+                    <span class="lang-fr">Contact</span>
+                    <span class="lang-en">Contact</span>
+                </a></li>
+            </ul>
+        </div>
+        <div class="language-switcher">
+            <label for="lang-fr" class="lang-btn active" data-lang="fr">FR</label>
+            <label for="lang-en" class="lang-btn active" data-lang="en">EN</label>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <main class="page-content">
+        <div class="container">
+            <div class="page-header">
+                <h1 class="page-title">
+                    <span class="lang-fr">Contactez-nous</span>
+                    <span class="lang-en">Contact Us</span>
+                </h1>
+                <div class="page-subtitle">
+                    <span class="lang-fr">Montrez-nous comment vous vous passionnez pour HALO</span>
+                    <span class="lang-en">Tell us how you are passionate about HALO</span>
+                </div>
+            </div>
+
+            <article class="text-content">
+                <section class="content-section">
+                    <p>
+                        <span class="lang-fr">Vous avez des questions, des suggestions ou simplement envie de partager votre passion pour l'univers HALO? Nous aimerions entendre parler de vous. Remplissez le formulaire ci-dessous et nous vous répondrons dès que possible.</span>
+                        <span class="lang-en">Do you have questions, suggestions, or just want to share your passion for the HALO universe? We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</span>
+                    </p>
+                </section>
+
+                <section class="content-section contact-form-section">
+                    <form class="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">
+                                <span class="lang-fr">Nom complet</span>
+                                <span class="lang-en">Full Name</span>
+                            </label>
+                            <input type="text" id="name" name="name" required placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <span class="lang-fr">Adresse email</span>
+                                <span class="lang-en">Email Address</span>
+                            </label>
+                            <input type="email" id="email" name="email" required placeholder="">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <span class="lang-fr">Sujet</span>
+                                <span class="lang-en">Subject</span>
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>
+                                    <span class="lang-fr">Choisir un sujet</span>
+                                </option>
+                                <option value="feedback">
+                                    <span class="lang-fr">Retours et suggestions</span>
+                                </option>
+                                <option value="question">
+                                    <span class="lang-fr">Question</span>
+                                </option>
+                                <option value="collaboration">
+                                    <span class="lang-fr">Collaboration</span>
+                                </option>
+                                <option value="other">
+                                    <span class="lang-fr">Autre</span>
+                                </option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <span class="lang-fr">Message</span>
+                                <span class="lang-en">Message</span>
+                            </label>
+                            <textarea id="message" name="message" required placeholder="" rows="8"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <span class="lang-fr">Envoyer le message</span>
+                            <span class="lang-en">Send Message</span>
+                        </button>
+                    </form>
+                </section>
+
+                <section class="content-section">
+                    <h2>
+                        <span class="lang-fr">Autres moyens de nous contacter</span>
+                        <span class="lang-en">Other Ways to Reach Us</span>
+                    </h2>
+                    <div class="contact-info-grid">
+                        <div class="contact-info-card">
+                            <h3>
+                                <span class="lang-fr">Email</span>
+                                <span class="lang-en">Email</span>
+                            </h3>
+                            <p>
+                                <a href="mailto:porquet.allan01@gmail.com">porquet.allan01@gmail.com</a>
+                            </p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3>
+                                <span class="lang-fr">Réseaux sociaux</span>
+                                <span class="lang-en">Social Media</span>
+                            </h3>
+                            <p>
+                                <span class="lang-fr">Suivez-nous sur Twitter, Discord et Instagram</span>
+                                <span class="lang-en">Follow us on Twitter, Discord and Instagram</span>
+                            </p>
+                        </div>
+                        <div class="contact-info-card">
+                            <h3>
+                                <span class="lang-fr">Localisation</span>
+                                <span class="lang-en">Location</span>
+                            </h3>
+                            <p>
+                                <span class="lang-fr">Aix-en-Provence</span>
+                                <span class="lang-en">Aix-en-Provence</span>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-content">
+            <p>
+                <span class="lang-fr">&copy; 2026 HALO Saga - Tous droits réservés</span>
+                <span class="lang-en">&copy; 2026 HALO Saga - All rights reserved</span>
+            </p>
+            <p>
+                <span class="lang-fr">Une passion pour l'univers HALO</span>
+                <span class="lang-en">A passion for the HALO Universe</span>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
