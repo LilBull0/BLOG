@@ -122,40 +122,33 @@
     background: rgba(0, 120, 212, 0.25);
 }
 
-/* When #en is targeted: show English, hide French */
+/* When #en is targeted: show English, hide French everywhere */
+#en:target ~ * .link-en,
+#en:target ~ * .lang-en {
+    display: inline !important;
+}
+
+#en:target ~ * .link-fr,
+#en:target ~ * .lang-fr {
+    display: none !important;
+}
+
+/* Ensure nav link-en shows as block for proper layout */
 #en:target ~ nav .link-en {
     display: block !important;
 }
 
-#en:target ~ nav .link-fr {
-    display: none !important;
-}
-
-#en:target ~ nav .lang-en,
-#en:target ~ header .lang-en,
-#en:target ~ main .lang-en,
-#en:target ~ section .lang-en,
-#en:target ~ footer .lang-en {
-    display: inline !important;
-}
-
-#en:target ~ nav .lang-fr,
-#en:target ~ header .lang-fr,
-#en:target ~ main .lang-fr,
-#en:target ~ section .lang-fr,
-#en:target ~ footer .lang-fr {
-    display: none !important;
-}
-
-#en:target ~ header .link-en,
-#en:target ~ main .link-en,
-#en:target ~ section .link-en {
+/* Ensure CTA buttons show as inline-block */
+#en:target ~ * .cta-button.link-en {
     display: inline-block !important;
 }
 
-#en:target ~ header .link-fr,
-#en:target ~ main .link-fr,
-#en:target ~ section .link-fr {
+/* Ensure back-to-top shows as flex */
+#en:target ~ .back-to-top.link-en {
+    display: flex !important;
+}
+
+#en:target ~ .back-to-top.link-fr {
     display: none !important;
 }
 
