@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HALO Saga - Galerie</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="nav-fix.css">
+    <link rel="stylesheet" href="gallery-fix.css">
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300;400;600;700&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -166,13 +168,10 @@
                 </h2>
                 <div class="video-container">
                     <div class="video-wrapper">
-                        <iframe 
-                            src="Halo-Trailer.mp4" 
-                            title="HALO Combat Evolved Trailer" 
-                            frameborder="0" 
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                            allowfullscreen>
-                        </iframe>
+                        <video controls preload="metadata" playsinline poster="halo-tv-series.webp">
+                            <source src="Halo-Trailer.mp4" type="video/mp4">
+                            Votre navigateur ne prend pas en charge la lecture video.
+                        </video>
                     </div>
                     <p class="video-caption">
                         <span class="lang-fr">Découvrez l'univers épique de HALO</span>
